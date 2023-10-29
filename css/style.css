@@ -1,0 +1,126 @@
+:root {
+  --accent-color: #03a9f4;
+  --main-color: #626262; 
+  --add-color: #b4ad9e;
+}
+body {
+  font-family: Playfair Display;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  width: 936px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  padding-top: 71px;
+  padding-bottom: 92px;
+}
+.nav-list {
+  display: flex;
+  gap: 99px;
+  justify-content: center;
+}
+.nav-link {
+  color: #7d7d7d;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-color);
+}
+.main-content {
+  padding-bottom: 66px;
+}
+.main-content-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 65px;
+}
+.main-content-item {
+  max-width: 420px;
+}
+.main-content-item:nth-child(-n+2) .main-content-img {
+  margin-bottom: 62px;
+}
+.main-content-img {
+  margin-bottom: 32px;
+}
+.main-content-subtitle {
+  color: var(--main-color);
+  font-family: Ubuntu;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.main-content-item-title {
+  color: var(--main-color);
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.main-color-item-text {
+  color: var(--main-color);
+  font-size: 14px;
+}
+.load-more-btn {
+  color: var(--main-color);
+  font-family: inherit;
+  font-size: 14px;
+  padding: 20px 48px;
+  transition: .3s;
+  display: block;
+  margin: 0 auto;
+  margin-top: 94px;
+  border: none;
+  outline: 1px solid var(--main-color);
+}
+.load-more-btn:hover,
+.load-more-btn:focus {
+    background: var(--accent-color);
+    color: #fff;
+    cursor: pointer;
+}

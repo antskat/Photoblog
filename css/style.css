@@ -78,16 +78,16 @@ img {
 .main-content-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 65px;
 }
-.main-content-item {
-  max-width: 420px;
+.main-content-item { 
+  width: 420px;
+  margin-bottom: 130px;
 }
-.main-content-item:nth-child(-n+2) .main-content-img {
-  margin-bottom: 62px;
+.main-content-item:nth-child(odd) {
+  margin-right: 65px;
 }
-.main-content-img {
-  margin-bottom: 32px;
+.main-content-item:nth-child(n+5) {
+  margin-bottom: 0;
 }
 .main-content-subtitle {
   color: var(--main-color);

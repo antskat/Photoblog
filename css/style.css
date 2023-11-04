@@ -84,6 +84,12 @@ img {
 .main-content-item { 
   width: 420px;
 }
+.main-content-img {
+  margin-bottom: 62px;
+}
+.main-content-item:nth-child(n+3) .main-content-img {
+  margin-bottom: 32px;
+}
 .main-content-subtitle {
   color: var(--main-color);
   font-family: Ubuntu;
